@@ -19,6 +19,7 @@ second digit:
 ```
 
 Following picture demonstrates the segments on the display and corresponding pins (taken from http://arduinonavody.cz/7-segmentovy-displej-a-jeho-zapojeni/).
+
 ![7-segment display segments pinout](Common-Cathode.gif)
 
 If you use different wiring, simply change the constants to corresponding pins.
