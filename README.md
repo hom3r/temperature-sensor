@@ -8,15 +8,27 @@ The default wiring is shown below.
 first digit:
   segment A -> pin 0
   segment B -> pin 1
-  ...
+  segment C -> pin 2
+  segment D -> pin 3
+  segment E -> pin 4
+  segment F -> pin 5
   segment G -> pin 6
 
 second digit:
   segment A -> pin 7
   segment B -> pin 8
-  ...
+  segment C -> pin 9
+  segment D -> pin 10
+  segment E -> pin 11
+  segment F -> pin 12
   segment G -> pin 13
+
+DHT sensor -> pin A0
 ```
+
+![Wiring schematics](schematics.png)
+
+Please do not feel discouraged by the schematics above. Each segment simply needs 7 data pins, with DHT added this takes 15 data pins on Arduino.
 
 Following picture demonstrates the segments on the display and corresponding pins (taken from http://arduinonavody.cz/7-segmentovy-displej-a-jeho-zapojeni/).
 

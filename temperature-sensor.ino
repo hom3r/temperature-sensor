@@ -50,8 +50,8 @@ void setup() {
   sensor_t sensor;
   dht.temperature().getSensor(&sensor);
   delayMS = sensor.min_delay / 1000;
-  
-  Serial.println(F("DHTxx Unified Sensor Example"));
+
+  Serial.println(F("DHTxx sensor"));
   Serial.println(F("------------------------------------"));
   Serial.println(F("Temperature Sensor"));
   Serial.print  (F("Sensor Type: ")); Serial.println(sensor.name);
@@ -64,10 +64,8 @@ void setup() {
 }
 
 void loop() {
-  
   delay(delayMS);
 
-  
   sensors_event_t event;
   dht.temperature().getEvent(&event);
   if (isnan(event.temperature)) {
@@ -96,7 +94,7 @@ void displayDigit(int value) {
       digitalWrite(SEG_F, HIGH);
       digitalWrite(SEG_G, LOW);
       break;
-    
+
     case 1:
       digitalWrite(SEG_A, LOW);
       digitalWrite(SEG_B, HIGH);
@@ -106,7 +104,7 @@ void displayDigit(int value) {
       digitalWrite(SEG_F, LOW);
       digitalWrite(SEG_G, LOW);
       break;
-    
+
     case 2:
       digitalWrite(SEG_A, HIGH);
       digitalWrite(SEG_B, HIGH);
@@ -116,7 +114,7 @@ void displayDigit(int value) {
       digitalWrite(SEG_F, LOW);
       digitalWrite(SEG_G, HIGH);
       break;
-      
+
     case 3:
       digitalWrite(SEG_A, HIGH);
       digitalWrite(SEG_B, HIGH);
@@ -126,7 +124,7 @@ void displayDigit(int value) {
       digitalWrite(SEG_F, LOW);
       digitalWrite(SEG_G, HIGH);
       break;
-      
+
     case 4:
       digitalWrite(SEG_A, LOW);
       digitalWrite(SEG_B, HIGH);
@@ -147,7 +145,7 @@ void displayDigit(int value) {
       digitalWrite(SEG_G, HIGH);
       break;
 
-    
+
     case 6:
       digitalWrite(SEG_A, HIGH);
       digitalWrite(SEG_B, LOW);
@@ -158,7 +156,7 @@ void displayDigit(int value) {
       digitalWrite(SEG_G, HIGH);
       break;
 
-    
+
     case 7:
       digitalWrite(SEG_A, HIGH);
       digitalWrite(SEG_B, HIGH);
@@ -169,7 +167,7 @@ void displayDigit(int value) {
       digitalWrite(SEG_G, LOW);
       break;
 
-    
+
     case 8:
       digitalWrite(SEG_A, HIGH);
       digitalWrite(SEG_B, HIGH);
@@ -180,7 +178,7 @@ void displayDigit(int value) {
       digitalWrite(SEG_G, HIGH);
       break;
 
-    
+
     case 9:
       digitalWrite(SEG_A, HIGH);
       digitalWrite(SEG_B, HIGH);
@@ -190,7 +188,7 @@ void displayDigit(int value) {
       digitalWrite(SEG_F, HIGH);
       digitalWrite(SEG_G, HIGH);
       break;
-      
+
     default:
       digitalWrite(SEG_A, HIGH);
       digitalWrite(SEG_B, LOW);
@@ -214,7 +212,7 @@ void displaySecondDigit(int value) {
       digitalWrite(SEG2_F, HIGH);
       digitalWrite(SEG2_G, LOW);
       break;
-    
+
     case 1:
       digitalWrite(SEG2_A, LOW);
       digitalWrite(SEG2_B, HIGH);
@@ -224,7 +222,7 @@ void displaySecondDigit(int value) {
       digitalWrite(SEG2_F, LOW);
       digitalWrite(SEG2_G, LOW);
       break;
-    
+
     case 2:
       digitalWrite(SEG2_A, HIGH);
       digitalWrite(SEG2_B, HIGH);
@@ -234,7 +232,7 @@ void displaySecondDigit(int value) {
       digitalWrite(SEG2_F, LOW);
       digitalWrite(SEG2_G, HIGH);
       break;
-      
+
     case 3:
       digitalWrite(SEG2_A, HIGH);
       digitalWrite(SEG2_B, HIGH);
@@ -244,7 +242,7 @@ void displaySecondDigit(int value) {
       digitalWrite(SEG2_F, LOW);
       digitalWrite(SEG2_G, HIGH);
       break;
-      
+
     case 4:
       digitalWrite(SEG2_A, LOW);
       digitalWrite(SEG2_B, HIGH);
@@ -265,7 +263,7 @@ void displaySecondDigit(int value) {
       digitalWrite(SEG2_G, HIGH);
       break;
 
-    
+
     case 6:
       digitalWrite(SEG2_A, HIGH);
       digitalWrite(SEG2_B, LOW);
@@ -276,7 +274,7 @@ void displaySecondDigit(int value) {
       digitalWrite(SEG2_G, HIGH);
       break;
 
-    
+
     case 7:
       digitalWrite(SEG2_A, HIGH);
       digitalWrite(SEG2_B, HIGH);
@@ -287,7 +285,7 @@ void displaySecondDigit(int value) {
       digitalWrite(SEG2_G, LOW);
       break;
 
-    
+
     case 8:
       digitalWrite(SEG2_A, HIGH);
       digitalWrite(SEG2_B, HIGH);
@@ -298,7 +296,7 @@ void displaySecondDigit(int value) {
       digitalWrite(SEG2_G, HIGH);
       break;
 
-    
+
     case 9:
       digitalWrite(SEG2_A, HIGH);
       digitalWrite(SEG2_B, HIGH);
@@ -308,7 +306,7 @@ void displaySecondDigit(int value) {
       digitalWrite(SEG2_F, HIGH);
       digitalWrite(SEG2_G, HIGH);
       break;
-      
+
     default:
       digitalWrite(SEG2_A, HIGH);
       digitalWrite(SEG2_B, LOW);
